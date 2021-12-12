@@ -9,4 +9,8 @@
 
 # 2 . WORK FLOW
 
--
+- mention the route - endpoint,name,component,authority of access to different types of users, the kind of route : auth,unauth, general
+- routeguard handles 'who can access what' based on he roles mentioned on the route
+- on routing to home '/', different types of users will be directed to different pages which serve as their homes.
+
+- children routes are handled differently, will be added when need arises.
