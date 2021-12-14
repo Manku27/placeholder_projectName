@@ -1,9 +1,8 @@
 # 1 . GOAL
 
 - Every user must be able to see the landing page of the website.
-- Everyone can access the login route where two category of people can log in :
-  a . Contributor
-  b . Admin
+- Everyone can access the Contributor login route where Contributor can log in.
+- Logged in contributor can access admin login page where admin can log in.
 - The general user cannot access routes protected for logged in members.
 - Contributor cannot access routes protected for admin.
 
