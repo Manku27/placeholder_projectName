@@ -10,6 +10,7 @@ import { LoginScreen } from "../views/pages/LoginScreen";
 import { LandingScreen } from "../views/pages/LandingScreen";
 import { Home } from "../views/pages/Home";
 import { NotFoundScreen } from "../views/pages/NotFoundScreen";
+import { AdminLoginScreen } from "../views/pages/AdminLoginScreen";
 
 export const LOGIN_ROUTE = {
   name: "Login",
@@ -47,6 +48,15 @@ export const ADMIN_LANDING_ROUTE = {
   roles: [UserRole.Admin]
 };
 
+export const ADMIN_LOGIN_ROUTE = {
+  name: "Admin Login",
+  path: "/contributor/iAmGod",
+  guard: ROUTE_GUARD_TYPE_AUTH,
+  component: AdminLoginScreen,
+  exact: true,
+  roles: [UserRole.Contributor]
+};
+
 export const CONTRIBUTOR_LANDING_ROUTE = {
   name: "Contributor Landing",
   path: "/contributor/landing",
@@ -70,6 +80,7 @@ export const ROUTES = [
   { ...HOME_ROUTE },
   { ...LANDING_ROUTE },
   { ...ADMIN_LANDING_ROUTE },
+  { ...ADMIN_LOGIN_ROUTE },
   { ...CONTRIBUTOR_LANDING_ROUTE },
 
   // keeep this last or it will override other routes
