@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { loginSchema } from "../../validation/validationSchema";
+import { loginSchema } from "../../validation/userManagementValidationSchema";
 import { LoginPayload } from "../../types/user";
 
 export function LoginScreen() {
